@@ -1,3 +1,4 @@
+/*reset css*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,6 +53,7 @@ table {
   border-spacing: 0;
 }
 
+/*base css*/
 *,
 *::before,
 *::after {
@@ -77,6 +79,8 @@ sub {
   vertical-align: sub;
 }
 
+/*color css*/
+/*main css*/
 .container {
   max-width: 1120px;
   margin: 0 auto;

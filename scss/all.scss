@@ -1,27 +1,106 @@
-@import "variable";
-@import "base";
-@import "main";
+
+/*reset css*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*base css*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height: 1.5;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+sub{
+	vertical-align: sub;
+}
 
 
+/*color css*/
+$gray100:#FFFFFF;
+$gray200:#F5F5F5;
+$gray300:#DDDDDD;
+
+$dark900:#221E1F;
+$dark800:#2E2E2E;
+$dark700:#747474;
+
+$blue:#56C4C5;
+$red:#FF5D50;
+$yellow-dark:#F5CA52;
+$yellow-light:#FFD153;
 
 
-// h1{
-//     color: black;
-//     font-size: 40px;
-// }
+/*main css*/
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-// .title{
-//     background: gray;
-// }
-
-// @media (max-width:768px){
-//     .title{
-//         background: pink;
-//     }
-// }
-
-// @media (max-width:375px){
-//     .title{
-//         background: blue;
-//     }
-// }
+.title{
+    color: $yellow-dark;
+    font-size: 50px;
+}
