@@ -98,6 +98,12 @@ $yellow-light:#FFD153;
 //   }
 
 /*main css*/
+.indexBody{
+	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
 .container {
     max-width: 1120px;
     margin: 0 auto;
@@ -127,4 +133,34 @@ $yellow-light:#FFD153;
 	background-color: $red;
 	padding: 8px 32px;
 	border-radius: 22px;
+}
+
+.banner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 271px;
+	width: 100%;
+}
+
+.bannerText h2{
+	color: $blue;
+	font-size: 18px;
+}
+
+.bannerText p{
+	color: $dark900;
+	font-size: 48px;
+	font-weight: 700;
+	padding-top: 8px;
+	padding-bottom: 16px;
+}
+
+.bannerText h3{
+	color: $dark900;
+	font-size: 20px;
+}
+
+.banner img{
+	max-width: 532px;
 }
