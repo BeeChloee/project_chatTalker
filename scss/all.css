@@ -73,6 +73,7 @@ img {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 sub {
@@ -88,8 +89,34 @@ sub {
   padding-right: 16px;
 }
 
-.title {
-  color: #F5CA52;
-  font-size: 50px;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 0px;
+  margin-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header h1 > a {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 218px;
+  height: 40px;
+}
+
+.header > a {
+  color: #FFFFFF;
+  background-color: #FF5D50;
+  padding: 8px 32px;
+  border-radius: 22px;
 }
 /*# sourceMappingURL=all.css.map */
