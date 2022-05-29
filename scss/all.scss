@@ -50,8 +50,21 @@ table {
 	border-spacing: 0;
 }
 
-/*base css*/
+/*color variable css*/
+$gray100:#FFFFFF;
+$gray200:#F5F5F5;
+$gray300:#DDDDDD;
 
+$dark900:#221E1F;
+$dark800:#2E2E2E;
+$dark700:#747474;
+
+$blue:#56C4C5;
+$red:#FF5D50;
+$yellow-dark:#F5CA52;
+$yellow-light:#FFD153;
+
+/*base css*/
 *,
 *::before,
 *::after {
@@ -61,6 +74,7 @@ table {
 body{
 	font-family: 'Noto Sans TC', sans-serif;
 	line-height: 1.5;
+	color: $dark900;
 }
 
 img{
@@ -76,21 +90,6 @@ a{
 sub{
 	vertical-align: sub;
 }
-
-
-/*color variable css*/
-$gray100:#FFFFFF;
-$gray200:#F5F5F5;
-$gray300:#DDDDDD;
-
-$dark900:#221E1F;
-$dark800:#2E2E2E;
-$dark700:#747474;
-
-$blue:#56C4C5;
-$red:#FF5D50;
-$yellow-dark:#F5CA52;
-$yellow-light:#FFD153;
 
 
 // *{
@@ -155,7 +154,6 @@ $yellow-light:#FFD153;
 }
 
 .bannerText p{
-	color: $dark900;
 	font-size: 48px;
 	font-weight: 700;
 	padding-top: 8px;
@@ -163,7 +161,6 @@ $yellow-light:#FFD153;
 }
 
 .bannerText h3{
-	color: $dark900;
 	font-size: 20px;
 }
 
@@ -177,7 +174,6 @@ $yellow-light:#FFD153;
 }
 
 .plateform h2{
-	color: $dark900;
 	font-size: 32px;
 	margin-bottom: 48px;
 	font-weight: 700;
@@ -214,7 +210,6 @@ $yellow-light:#FFD153;
 }
 
 .target h2{
-	color: $dark900;
 	font-weight: 700;
 	font-size: 32px;
 	text-align: center;
@@ -222,7 +217,6 @@ $yellow-light:#FFD153;
 
 .target p{
 	font-size: 20px;
-	color: $dark900;
 	text-align: center;
 	padding: 16px 0px 48px;
 }
@@ -252,7 +246,6 @@ $yellow-light:#FFD153;
 }
 
 .targetItem p{
-	color: $dark900;
 	font-size: 16px;
 	padding: 0px 16px 24px;
 }
@@ -260,25 +253,63 @@ $yellow-light:#FFD153;
 /*feature css*/
 .feature{
 	display: flex;
-	margin-bottom: 100px;
-	justify-content: center;
 	align-items: center;
+	margin-bottom: 72px;
+	justify-content: space-between;
 }
 
 .featureItem{
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 507px;
+	justify-content: space-between;
 }
 
 .featureItem li{
-	padding: 32px 32px 48px;
+	width: 230px;
 	box-shadow: 0px 2px 10px #00000014;
-
+	border-radius: 12px;
+	padding: 32px 32px 48px;
+	margin-bottom: 28px;
 }
 
+.decorImg{
+	width: 86px;
+    height: 86px;
+    border-radius: 50%;
+	box-shadow: 0px 2px 10px #00000014;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.featureItem h2{
+	font-size: 18px;
+	font-weight: 700;
+	padding: 24px 0px 16px;
+}
+
+.featureIntro{
+	margin-right: 49px;
+}
 
 .featureIntro h2{
-	color: $dark900;
 	font-size: 32px;
 	font-weight: 700;
+}
+
+.featureIntro p{
+	font-size: 18px;
+	padding: 16px 0px 24px;
+}
+
+.featureIntro a{
+	color: $gray100;
+	background-color: $blue;
+	padding: 12px 32px;
+	border-radius: 22px;
+	display: inline-block;
+	&:hover{
+		background-color: darken($blue,10%);
+	}
 }
