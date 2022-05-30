@@ -366,7 +366,10 @@ sub{
 .rating{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+}
+
+.rating img{
+	vertical-align: middle;
 }
 
 .pagination{
