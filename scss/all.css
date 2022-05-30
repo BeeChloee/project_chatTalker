@@ -411,8 +411,8 @@ sub {
           justify-content: space-between;
 }
 
-.rating img {
-  vertical-align: text-bottom;
+.ratingStar img {
+  vertical-align: middle;
 }
 
 .pagination {
