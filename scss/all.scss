@@ -103,6 +103,19 @@ sub{
 	background-position: right top;
 }
 
+.primaryBtn{
+	color: $gray100;
+	background-color: $blue;
+	padding: 12px 32px;
+	border-radius: 22px;
+	display: inline-block;
+	margin: 0 auto;
+
+	&:hover{
+		background-color: darken($blue,15%);
+	}
+}
+
 .container {
     max-width: 1120px;
     margin: 0 auto;
@@ -304,16 +317,6 @@ sub{
 	padding: 16px 0px 24px;
 }
 
-.featureIntro a{
-	color: $gray100;
-	background-color: $blue;
-	padding: 12px 32px;
-	border-radius: 22px;
-	display: inline-block;
-	&:hover{
-		background-color: darken($blue,15%);
-	}
-}
 
 /*review css*/
 .review{
@@ -390,3 +393,37 @@ sub{
 	height: 10px;
 	background: $yellow-light;
 }
+
+/*footer css*/
+.footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.footer img{
+	width: 100%;
+	position: absolute;
+    z-index: -1;
+}
+
+.footer h2{
+	margin: 19.36% auto 48px;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.footer a{
+	margin-bottom: 100px;
+}
+
+.copyright{
+	background: $gray200;
+	text-align: center;
+}
+
+.copyright{
+	padding: 16px 0px;
+}
+

@@ -89,6 +89,19 @@ sub {
   background-position: right top;
 }
 
+.primaryBtn {
+  color: #FFFFFF;
+  background-color: #56C4C5;
+  padding: 12px 32px;
+  border-radius: 22px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.primaryBtn:hover {
+  background-color: #35999a;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -330,18 +343,6 @@ sub {
   padding: 16px 0px 24px;
 }
 
-.featureIntro a {
-  color: #FFFFFF;
-  background-color: #56C4C5;
-  padding: 12px 32px;
-  border-radius: 22px;
-  display: inline-block;
-}
-
-.featureIntro a:hover {
-  background-color: #35999a;
-}
-
 /*review css*/
 .review {
   display: -webkit-box;
@@ -434,5 +435,45 @@ sub {
   width: 16px;
   height: 10px;
   background: #FFD153;
+}
+
+/*footer css*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.footer img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.footer h2 {
+  margin: 19.36% auto 48px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer a {
+  margin-bottom: 100px;
+}
+
+.copyright {
+  background: #F5F5F5;
+  text-align: center;
+}
+
+.copyright {
+  padding: 16px 0px;
 }
 /*# sourceMappingURL=all.css.map */
