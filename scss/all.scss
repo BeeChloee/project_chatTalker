@@ -182,41 +182,41 @@ sub{
 	width: 50%;
 }
 
-/*plateform css*/
-.plateform{
+/*platform css*/
+.platform{
 	margin-bottom: 100px;
 }
 
-.plateform h2{
+.platform h2{
 	font-size: 32px;
 	margin-bottom: 48px;
 	font-weight: 700;
 	text-align: center;
 }
 
-.plateformItem{
+.platformItem{
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 
 }
 
-.plateformItem li{
+.platformItem li{
 	text-align: center;
 	width: 24.8%;
 }
 
-.plateformItem img{
+.platformItem img{
 	width: 30%;
 }
 
-.plateformItem h3{
+.platformItem h3{
 	font-size: 24px;
 	font-weight: 700;
 	padding: 24px 0px;
 }
 
-.plateformItem p{
+.platformItem p{
 	font-size: 16px;
 	color: $dark700;
 }
@@ -448,12 +448,12 @@ sub{
 		width: 80%;
 	}
 
-	.plateformItem li{
+	.platformItem li{
 		width: 100%;
 		padding-bottom: 24px;
 	}
 
-	.plateformItem img{
+	.platformItem img{
 		width: 90px;
 	}
 
@@ -472,7 +472,7 @@ sub{
 		flex-direction: column-reverse;
 		text-align: center;
 	}
-	
+
 	.featureIntro{
 		text-align: center;
 		margin: 0 auto;
