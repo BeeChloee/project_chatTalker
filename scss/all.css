@@ -454,10 +454,14 @@ sub {
   position: relative;
 }
 
-.footer img {
+.footerBg_L {
   width: 100%;
   position: absolute;
   z-index: -1;
+}
+
+.footerBg_S {
+  display: none;
 }
 
 .footer h2 {
@@ -479,13 +483,37 @@ sub {
   padding: 16px 0px;
 }
 
-@media (max-width: 769px) {
-  .container {
-    max-width: 820px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+@media (max-width: 992px) {
+  .feature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
   }
+  .featureIntro {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .feature a {
+    margin-bottom: 32px;
+  }
+  .reviewContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 100px;
+    padding: 0px 24px;
+  }
+  .reviewContent li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
   .banner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -516,32 +544,117 @@ sub {
     width: 48%;
     margin-bottom: 24px;
   }
-  .feature {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    text-align: center;
+}
+
+@media (max-width: 375px) {
+  .indexBody {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+    background-position: 35% 6%;
+    background-size: 80%;
   }
-  .featureIntro {
-    text-align: center;
-    margin: 0 auto;
+  .header {
+    border-bottom: 2px solid #FFD153;
   }
-  .feature a {
+  .header h1 > a {
+    width: 130px;
+    height: 24px;
+  }
+  .header > a {
+    color: #FFFFFF;
+    background-color: #FF5D50;
+    padding: 8px 32px;
+    border-radius: 22px;
+  }
+  .header > a:hover {
+    background-color: #e91100;
+  }
+  .banner {
+    margin-bottom: 92px;
+  }
+  .banner h2 {
+    font-size: 16px;
+  }
+  .banner p {
+    font-size: 32px;
+  }
+  .banner h3 {
+    font-size: 16px;
+  }
+  .platform {
+    margin-bottom: 60px;
+  }
+  .platform h2 {
+    font-size: 28px;
     margin-bottom: 32px;
   }
-  .reviewContent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 100px;
-    padding: 0px 24px;
+  .platformItem h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 0px;
   }
-  .reviewContent li {
+  .target {
+    margin-bottom: 60px;
+  }
+  .target h2 {
+    font-size: 28px;
+  }
+  .target p {
+    font-size: 18px;
+    padding: 16px 0px 32px;
+  }
+  .targetItem li {
     width: 100%;
+    margin-bottom: 24px;
+  }
+  .targetItem p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .featureIntro h2 {
+    font-size: 28px;
+  }
+  .featureIntro p {
+    font-size: 16px;
+    padding: 16px 0px 16px;
+  }
+  .feature {
+    margin-bottom: 60px;
+  }
+  .featureItem {
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .featureItem li {
+    width: 85%;
+    padding-left: 24px;
+  }
+  .review {
+    margin-bottom: 60px;
+  }
+  .review h2 {
+    font-size: 28px;
+    margin-bottom: 88px;
+  }
+  .footerBg_L {
+    display: none;
+  }
+  .footerBg_S {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .footer h2 {
+    margin: 79.2% auto 24px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .footer a {
+    margin-bottom: 60px;
   }
 }
 /*# sourceMappingURL=all.css.map */
