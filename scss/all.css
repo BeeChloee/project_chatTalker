@@ -657,4 +657,23 @@ sub {
     margin-bottom: 60px;
   }
 }
+
+/*--------pricing page css--------*/
+.header {
+  margin-bottom: 92px;
+}
+
+.pricing_banner {
+  margin-bottom: 100px;
+}
+
+.pricing_banner h2 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.pricing_banner p {
+  font-size: 16px;
+}
 /*# sourceMappingURL=all.css.map */
