@@ -101,7 +101,9 @@ sub{
 	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
 	background-repeat: no-repeat;
 	background-position: right top;
+	position: relative;
 }
+
 
 .primaryBtn{
 	font-size: 18px;
@@ -116,6 +118,15 @@ sub{
 		background-color: darken($blue,15%);
 	}
 }
+
+.ball_1{
+	position: absolute;
+	top: 589px;
+	left: -222px;
+	margin: 0 auto;
+	z-index: -2;
+}
+
 
 .container {
     max-width: 1120px;
@@ -160,7 +171,6 @@ sub{
 	justify-content: space-between;
 	margin-bottom: 271px;
 }
-
 
 .bannerText h2{
 	color: $blue;
@@ -224,7 +234,9 @@ sub{
 /*target css*/
 .target{
 	margin-bottom: 100px;
+	// position: relative;
 }
+
 
 .target h2{
 	font-weight: 700;
@@ -327,6 +339,14 @@ sub{
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 100px;
+	position: relative;
+}
+
+.review .ball_3{
+    position: absolute;
+    z-index: -10;
+    left: -90px;
+    top: 50px;
 }
 
 .review h2{
@@ -346,6 +366,7 @@ sub{
 	padding: 48px 32px 24px;
 	border-radius: 12px;
 	position: relative;
+	background-color: $gray100;
 }
 
 .reviewContent li>img{
@@ -382,6 +403,7 @@ sub{
 	display: flex;
 	gap: 8px;
 	margin-top: 24px;
+	cursor: pointer;
 }
 
 .dot{
@@ -466,6 +488,12 @@ sub{
 
 @media(max-width:769px){
 
+	.ball_1 {
+		top: 1040px;
+		left: -108px;
+		height: 209px;
+	}
+	
 	.banner{
 		flex-wrap: wrap;
 		justify-content: center;
@@ -502,7 +530,12 @@ sub{
 		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
 		background-position: 35% 6%;
 		background-size: 80%;
+	}
 
+	.ball_1 {
+		top: 743px;
+		left: -77px;
+		height: 126px;
 	}
 	
 	.header{
